@@ -14,6 +14,7 @@ public class RecipeManager {
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
+            System.out.println("\n");
             scanner.nextLine();  // Consume newline
 
             switch (choice) {
@@ -24,6 +25,7 @@ public class RecipeManager {
 
                     System.out.print("Enter number of ingredients: ");
                     int numIngredients = scanner.nextInt();
+                    System.out.println("\n");
                     scanner.nextLine();  // Consume newline
                     Ingredient[] ingredients = new Ingredient[numIngredients];
                     for (int i = 0; i < numIngredients; i++) {
@@ -31,6 +33,7 @@ public class RecipeManager {
                         String ingredientName = scanner.nextLine();
                         System.out.print("Enter ingredient " + (i + 1) + " quantity: ");
                         String quantity = scanner.nextLine();
+                        System.out.println("\n");
                         ingredients[i] = new Ingredient(ingredientName, quantity);
                     }
 
